@@ -10,6 +10,11 @@ configure :development, :production do
      )
 end
 
+# Handle potential connection pool timeout issues
+after do
+    ActiveRecord::Base.connection.close
+end
+
 # Quick and dirty form for testing application
 #
 # If building a real application you should probably
