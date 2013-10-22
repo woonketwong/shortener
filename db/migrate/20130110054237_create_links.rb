@@ -8,4 +8,11 @@
 
 class CreateLinks < ActiveRecord::Migration
     # PUT MIGRATION CODE HERE TO SETUP DATABASE
+
+    def self.up
+    end
+
+    def self.down
+    end
+
 end
